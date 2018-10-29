@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>L3 - Collage</title>
+
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background: black;
+		}
+
+		.container{
+			background: black;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 2fr 1fr;
+			grid-template-areas:
+				"pic1 pic2 pic3 pic3"
+				"pic4 pic4 pic5 pic5"
+				"pic6 pic6 pic6 pic6";
+				grid-gap: 10px;
+				padding: 10px;			
+		}
+
+		.item {
+			background: green;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#pic1{
+			grid-area: pic1;
+			background: url(pic1.jpeg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#pic2{
+			grid-area: pic2;
+			background: url(pic2.jpeg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#pic3{
+			grid-area: pic3;
+			background: url(pic3.jpeg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#pic4{
+			grid-area: pic4;
+			background: url(pic4.jpeg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#pic5{
+			grid-area: pic5;
+			background: url(pic5.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#pic6{
+			grid-area: pic6;
+			background: url(pic6.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+	<body>
+		<div class="container">
+			<div class="item" id="pic1">
+			</div>
+			<div class="item" id="pic2">
+			</div>
+			<div class="item" id="pic3">
+			</div>
+			<div class="item" id="pic4">
+			</div>
+			<div class="item" id="pic5">
+			</div>
+			<div class="item" id="pic6">
+			</div>
+
+</div>
+</body>
+</head>
+</html>
+
+
